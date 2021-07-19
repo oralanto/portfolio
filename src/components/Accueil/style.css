@@ -1,0 +1,105 @@
+.Accueil {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../img/apple-desk.jpeg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.logo {
+  width: 10%;
+  font-size: 3em;
+  color: #CECBC5;
+}
+
+.menu {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-item {
+  padding: .5em .5em 0 .5em;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.3em;
+  transition-duration: 150ms;
+  color: #CECBC5;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  border: #CECBC5 2px solid;
+}
+
+.infos {
+  padding: 3em;
+}
+
+.name {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 5em;
+}
+
+.title-job {
+  font-size: 3em;
+}
+
+.linkedin {
+  width: 20%;
+  margin: auto;
+  padding: 1em;
+}
+
+.linkedin-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #CECBC5;
+  margin: auto;
+  padding: 1em;
+  border-radius: 20px;
+  transition-duration: 150ms;
+}
+
+.linkedin-link:hover {
+  border: 3px solid #0477b7;
+}
+
+.linkedin-text {
+  margin: 1em 0 0 0;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .disabled {
+    display: none;
+  }
+
+  .menu {
+    width: auto;
+  }
+
+  .name {
+    font-size: 3em;
+    margin-bottom: .2em;
+  }
+
+  .title-job {
+    font-size: 1.7em;
+  }
+
+  .linkedin {
+    width: auto;
+  }
+}
