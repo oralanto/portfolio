@@ -81,6 +81,10 @@
   margin: 1em 0 0 0;
 }
 
+.m {
+  margin: 1rem;
+}
+
 /* Responsive */
 
 @media (max-width: 900px) {

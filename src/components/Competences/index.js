@@ -13,6 +13,7 @@ const Competences = () => {
         <p className="Competences__item">React</p>
         <p className="Competences__item">Redux</p>
         <p className="Competences__item">Material-ui</p>
+        <p className="Competences__item">Bootstrap</p>
         <p className="Competences__item">Node</p>
         <p className="Competences__item">Express</p>
         <p className="Competences__item">PostgreSQL</p>
