@@ -27,9 +27,7 @@
   min-width: 150px;
   max-width: 300px;
   margin: 1em auto;
-
-  border: 2px solid #CECBC5;
-  border-radius: 10px;
+  border: 1px solid #CECBC5;
 }
 
 .Projets__card__img {
