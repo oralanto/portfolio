@@ -1,5 +1,5 @@
 .Accueil {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: url("../../img/apple-desk.jpeg");
   display: flex;
@@ -8,9 +8,13 @@
   padding: 2em;
 }
 
-.header {
+.menuBurger {
   display: flex;
+}
+
+.header {
   justify-content: space-between;
+  align-items: center;
   padding: 1em;
 }
 
@@ -28,7 +32,7 @@
 }
 
 .menu-item {
-  padding: .5em .5em 0 .5em;
+  padding: .5em;
   border-radius: 10px;
   font-weight: bold;
   font-size: 1.3em;
@@ -36,9 +40,16 @@
   color: #CECBC5;
   text-decoration: none;
 }
+.menu-burger-item {
+  padding: .5em;
+  font-weight: bold;
+  font-size: 1em;
+  color: #000000;
+  text-decoration: none;
+}
 
 .menu-item:hover {
-  border: #CECBC5 2px solid;
+  border: #CECBC5 1px solid;
 }
 
 .infos {
@@ -81,7 +92,7 @@
 
 /* Responsive */
 
-@media (max-width: 900px) {
+@media (max-width: 959px) {
   .disabled {
     display: none;
   }
