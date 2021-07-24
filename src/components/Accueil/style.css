@@ -8,6 +8,9 @@
   padding: 2em;
 }
 
+.test {
+  border: 1px #f0f solid;
+}
 .header {
   justify-content: space-between;
   align-items: center;
@@ -15,9 +18,9 @@
 }
 
 .logo {
-  width: 10%;
-  font-size: 3em;
-  color: #CECBC5;
+  position: absolute;
+  top: 0px;
+  left: 20px;
 }
 
 .menu {

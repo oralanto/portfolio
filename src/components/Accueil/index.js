@@ -10,6 +10,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 
 import linkedin from "../../img/linkedin.svg";
+import logo from "../../img/logo.png";
 import "./style.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -52,6 +53,9 @@ const Accueil = () => {
   return (
     <div className="Accueil" id="acceuil">
       <div className={classes.header + " disabled"}>
+    <div className="logo">
+      <img src={logo} alt="logo Osée Ralantoarison"/>
+    </div>
         <AppBar
           style={
             {
