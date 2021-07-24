@@ -16,6 +16,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  header: {
+    backgroundColor: "transparent",
+    color: "black",
+    boxShadow: "0px 0px 0px 0px"
+  },
   menuButton: {
     marginLeft: theme.spacing(2),
     [theme.breakpoints.down("lg")]: {
@@ -46,8 +51,16 @@ const Accueil = () => {
 
   return (
     <div className="Accueil" id="acceuil">
-      <div className={classes.root + " disabled"}>
-        <AppBar className="header" position="static">
+      <div className={classes.header + " disabled"}>
+        <AppBar
+          style={
+            {
+              background: "transparent",
+              boxShadow: 'none',
+            }
+          }
+          className="header"
+          position="static">
           <Toolbar>
             <Button color="inherit">
               <a className="menu-item disabled" href="#accueil">
@@ -80,7 +93,7 @@ const Accueil = () => {
           </Toolbar>
         </AppBar>
       </div>
-      <div className="menuBurger">
+      <div>
         <IconButton
           edge="start"
           className={classes.menuButton}

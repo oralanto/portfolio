@@ -8,10 +8,6 @@
   padding: 2em;
 }
 
-.menuBurger {
-  display: flex;
-}
-
 .header {
   justify-content: space-between;
   align-items: center;
@@ -32,10 +28,11 @@
 }
 
 .menu-item {
-  padding: .5em;
+  padding: .3em;
+  margin: 1em;
   border-radius: 10px;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.7em;
   transition-duration: 150ms;
   color: #CECBC5;
   text-decoration: none;
@@ -49,7 +46,8 @@
 }
 
 .menu-item:hover {
-  border: #CECBC5 1px solid;
+  border: #CECBC5 2px solid;
+  background-color: #41464B;
 }
 
 .infos {
