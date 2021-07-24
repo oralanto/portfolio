@@ -1,6 +1,5 @@
 .Competences {
-  width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #232527;
   background-image: url("../../img/html-code.jpeg");
   padding: 1em;
@@ -16,9 +15,9 @@
 }
 
 .Competences__list {
+  font-size: 1.5em;
   margin: 1em auto;
   width: 70%;
-  max-width: 800px;
   height: 25%;
   display: flex;
   flex-wrap: wrap;
