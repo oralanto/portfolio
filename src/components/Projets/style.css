@@ -55,6 +55,7 @@
 
 .Projets__github {
   width: 20%;
+  height: 20%;
   margin: auto;
   padding: 1em;
 }
@@ -86,10 +87,13 @@
 
 @media (max-width: 900px) {
   .Projets__github {
-    width: 50%;
+    width: auto;
     max-height: 50%;
   }
   .Projets__title {
     font-size: 3em;
+  }
+  .Projets__github__text {
+    margin: .1em;
   }
 }
