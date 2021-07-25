@@ -116,4 +116,8 @@
   .linkedin {
     width: auto;
   }
-}
+
+  .linkedin-text {
+    margin: .1em;
+  }
+};
