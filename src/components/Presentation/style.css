@@ -1,5 +1,6 @@
 .Presentation {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background-image: url("../../img/layered-waves-haikei.svg");
   background-size: cover;
   display: flex;
@@ -26,5 +27,9 @@
 @media (max-width: 900px) {
   .Presentation {
     height: auto;
+  }
+
+  .Presentation__title {
+    font-size: 3em;
   }
 }

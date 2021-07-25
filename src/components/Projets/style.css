@@ -21,7 +21,7 @@
 }
 
 .Projets__card {
-  width: 50%;
+  min-width: 50%;
   height: auto;
   min-width: 150px;
   max-width: 300px;
@@ -87,5 +87,9 @@
 @media (max-width: 900px) {
   .Projets__github {
     width: 50%;
+    max-height: 50%;
+  }
+  .Projets__title {
+    font-size: 3em;
   }
 }

@@ -1,5 +1,6 @@
 .Accueil {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background-image: url("../../img/apple-desk.jpeg");
   display: flex;
   flex-direction: column;
@@ -7,9 +8,10 @@
   padding: 2em;
 }
 
-.test {
+/* .test {
   border: 1px #f0f solid;
-}
+} */
+
 .header {
   justify-content: space-between;
   align-items: center;
@@ -67,6 +69,7 @@
 
 .linkedin {
   width: 20%;
+  height: 20%;
   margin: auto;
   padding: 1em;
 }
