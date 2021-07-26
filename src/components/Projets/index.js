@@ -123,17 +123,17 @@ const Projets = () => {
           </CardActions>
         </Card>
       </div>
-      <div className="Projets__github">
+      <Button  color="inherit">
         <a
           className="Projets__github__link"
           target="_blank"
           rel="noreferrer"
           href="https://www.github.com/oralanto/"
         >
-          <img src={github} alt="Icon Github" />
+          <img className="Projets__github__logo" src={github} alt="Icon Github" />
           <p className="Projets__github__text">Mon Github</p>
         </a>
-      </div>
+      </Button>
     </div>
   );
 };

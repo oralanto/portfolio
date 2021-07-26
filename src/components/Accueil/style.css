@@ -2,6 +2,7 @@
   min-height: 100vh;
   height: auto;
   background-image: url("../../img/apple-desk.jpeg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -85,12 +86,19 @@
   transition-duration: 150ms;
 }
 
+.linkedin-logo {
+  max-width: 200px;
+  height: auto;
+  margin: auto;
+}
+
 .linkedin-link:hover {
   border: 3px solid #0477b7;
 }
 
 .linkedin-text {
-  margin: 1em 0 0 0;
+  font-size: 1.5em;
+  margin-top: 1em;
 }
 
 /* Responsive */
@@ -118,6 +126,6 @@
   }
 
   .linkedin-text {
-    margin: .1em;
+    margin: .2em;
   }
 };
