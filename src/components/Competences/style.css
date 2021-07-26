@@ -2,6 +2,7 @@
   min-height: 100vh;
   background-color: #232527;
   background-image: url("../../img/laptop.jpeg");
+  background-size: cover;
   padding: 1em;
   display: flex;
   flex-direction: column;
