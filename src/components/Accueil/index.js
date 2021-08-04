@@ -2,12 +2,11 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-// import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
 
 import linkedin from "../../img/linkedin.svg";
 import logo from "../../img/logo.png";
@@ -20,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   header: {
     backgroundColor: "transparent",
     color: "black",
-    boxShadow: "0px 0px 0px 0px"
+    boxShadow: "0px 0px 0px 0px",
   },
   menuButton: {
     marginLeft: theme.spacing(2),
@@ -39,7 +38,6 @@ const useStyles = makeStyles((theme) => ({
 const Accueil = () => {
   const classes = useStyles();
 
-
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
@@ -49,22 +47,20 @@ const Accueil = () => {
     setAnchorEl(null);
   };
 
-
   return (
     <div className="Accueil" id="acceuil">
       <div className={classes.header + " disabled"}>
-    <div className="logo">
-      <img src={logo} alt="logo Osée Ralantoarison"/>
-    </div>
+        <div className="logo">
+          <img src={logo} alt="logo Osée Ralantoarison" />
+        </div>
         <AppBar
-          style={
-            {
-              background: "transparent",
-              boxShadow: 'none',
-            }
-          }
+          style={{
+            background: "transparent",
+            boxShadow: "none",
+          }}
           className="header"
-          position="static">
+          position="static"
+        >
           <Toolbar>
             <Button color="inherit">
               <a className="menu-item disabled" href="#accueil">
@@ -105,9 +101,7 @@ const Accueil = () => {
           aria-label="menu"
           size="medium"
         >
-          <MenuIcon
-            onClick={handleClick}
-          />
+          <MenuIcon onClick={handleClick} />
           <Menu
             id="simple-menu"
             anchorEl={anchorEl}
@@ -118,19 +112,23 @@ const Accueil = () => {
             <MenuItem onClick={handleClose}>
               <a className="menu-burger-item" href="#accueil">
                 Accueil
-              </a></MenuItem>
+              </a>
+            </MenuItem>
             <MenuItem onClick={handleClose}>
               <a className="menu-burger-item" href="#presentation">
                 Présentation
-              </a></MenuItem>
+              </a>
+            </MenuItem>
             <MenuItem onClick={handleClose}>
               <a className="menu-burger-item" href="#competences">
                 Compétences
-              </a></MenuItem>
+              </a>
+            </MenuItem>
             <MenuItem onClick={handleClose}>
               <a className="menu-burger-item" href="#projets">
                 Projets
-              </a></MenuItem>
+              </a>
+            </MenuItem>
           </Menu>
         </IconButton>
       </div>
@@ -139,13 +137,17 @@ const Accueil = () => {
         <h1 className="title-job">Développeur web</h1>
       </div>
       <Button color="inherit">
-      <a
+        <a
           className="linkedin-link"
           target="_blank"
           rel="noreferrer"
           href="https://www.linkedin.com/in/os%C3%A9e-ralantoarison-2b2265195/"
         >
-          <img className="linkedin-logo" src={linkedin} alt="Icon linkedin développeur web" />
+          <img
+            className="linkedin-logo"
+            src={linkedin}
+            alt="Icon linkedin développeur web"
+          />
           <p className="linkedin-text">Mon profil Linkedin</p>
         </a>
       </Button>

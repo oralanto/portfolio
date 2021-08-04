@@ -10,7 +10,7 @@
 }
 
 .Competences__title {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 5em;
   margin-bottom: 1em;
 }
@@ -34,9 +34,9 @@
   font-weight: bold;
   text-transform: uppercase;
   color: #232527;
-  background-color: #CECBC5;
+  /* background-color: #CECBC5; */
   border-radius: 10px;
-  padding: .5em .5em 0 .5em;
+  padding: 0.5em 0.5em 0 0.5em;
 }
 
 /* Responsive */
@@ -46,11 +46,11 @@
     width: auto;
     height: 100%;
     flex-direction: column;
-}
+  }
   .Competences__item {
     font-size: 1em;
     width: auto;
-    margin: .1em;
+    margin: 0.1em;
   }
   .Competences__github {
     width: 50%;
