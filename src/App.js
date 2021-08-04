@@ -14,8 +14,8 @@ function App() {
   return (
     <div className="App">
       <Accueil />
-      <Competences />
       <Presentation />
+      <Competences />
       <Projets />
       <Footer />
       {/* <AnimatedCursor
