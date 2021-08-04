@@ -2,7 +2,7 @@ import React from "react";
 
 // import circleScatter from "../../img/circle-scatter-haikei.png";
 
-import "./style.css";
+import "./styles.css";
 
 const Presentation = () => {
   return (
