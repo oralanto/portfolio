@@ -8,6 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import YouTubeIcon from "@material-ui/icons/YouTube";
 
 import Oboardgame from "../../img/Logo-oboardgame.png";
 import Converter from "../../img/Converter-spe-react.png";
@@ -64,7 +65,20 @@ const Projets = () => {
                 rel="noreferrer"
                 href="https://github.com/oralanto/Projet-titre-pro"
               >
-                Voir le projet
+                Voir le code du projet
+              </a>
+            </Button>
+          </CardActions>
+          <CardActions>
+            <Button size="small" color="primary">
+              <YouTubeIcon style={{ color: "black", margin: "1rem" }} />
+              <a
+                className="Projets__card__link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.youtube.com/watch?v=Jyh9R5xPMuM&t=2343s"
+              >
+                Voir la présentation du projet
               </a>
             </Button>
           </CardActions>
@@ -100,7 +114,7 @@ const Projets = () => {
                 rel="noreferrer"
                 href="https://github.com/oralanto/Converter-projet-React"
               >
-                Voir le projet
+                Voir le code du projet
               </a>
             </Button>
           </CardActions>
@@ -136,7 +150,7 @@ const Projets = () => {
                 rel="noreferrer"
                 href="https://github.com/oralanto/Chatroom-v1-React"
               >
-                Voir le projet
+                Voir le code du projet
               </a>
             </Button>
           </CardActions>
@@ -172,7 +186,7 @@ const Projets = () => {
                 rel="noreferrer"
                 href="https://github.com/oralanto/Chatroom-v1-React"
               >
-                Voir le projet
+                Voir le code du projet
               </a>
             </Button>
           </CardActions>
