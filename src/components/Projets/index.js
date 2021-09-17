@@ -10,6 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 
+import culturabaguete from "../../img/culturabaguete.jpeg";
 import Oboardgame from "../../img/Logo-oboardgame.png";
 import Converter from "../../img/Converter-spe-react.png";
 import Chatroom from "../../img/Chatroom-spe-react.png";
@@ -33,6 +34,55 @@ const Projets = () => {
     <div className="Projets" id="projets">
       <h2 className="Projets__title">Projets</h2>
       <div className="Projets__cards">
+        <Card
+          style={{ backgroundColor: "#41464B" }}
+          className={classes.root + " Projets__card"}
+        >
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image={culturabaguete}
+              title="oboardgame logo"
+            />
+            <CardContent style={{ color: "#CECBC5" }} variant="h6">
+              <Typography gutterBottom variant="h5" component="h2">
+                Cultura Baguete
+              </Typography>
+              <Typography variant="h6" component="p">
+                Site éducatif pour apprendre la culture et la langue française
+              </Typography>
+              <Typography variant="h6" component="p">
+                React-Redux, Node, Express, AWS, MangoDB.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              <GitHubIcon style={{ color: "black", margin: "1rem" }} />
+              <a
+                className="Projets__card__link"
+                target="_blank"
+                rel="noreferrer"
+                href="/culturabaguete"
+              >
+                Voir le projet
+              </a>
+            </Button>
+          </CardActions>
+          <CardActions>
+            <Button size="small" color="primary">
+              <YouTubeIcon style={{ color: "black", margin: "1rem" }} />
+              <a
+                className="Projets__card__link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.youtube.com/watch?v=Jyh9R5xPMuM&t=2343s"
+              >
+                Voir la présentation du projet
+              </a>
+            </Button>
+          </CardActions>
+        </Card>
         <Card
           style={{ backgroundColor: "#41464B" }}
           className={classes.root + " Projets__card"}
