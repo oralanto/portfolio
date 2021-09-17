@@ -87,10 +87,7 @@ const NavBar = () => {
               </Link>
             </Button>
             <Button color="inherit">
-              <Link
-                className="menu-item disabled"
-                to="mailto:o.ralantoarison@gmail.com"
-              >
+              <Link className="menu-item disabled" to="/contact">
                 Contact
               </Link>
             </Button>
