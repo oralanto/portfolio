@@ -111,24 +111,24 @@ const NavBar = () => {
             onClose={handleClose}
           >
             <MenuItem onClick={handleClose}>
-              <a className="menu-burger-item" href="#accueil">
+              <Link className="menu-burger-item" to="/">
                 Accueil
-              </a>
+              </Link>
             </MenuItem>
             <MenuItem onClick={handleClose}>
-              <a className="menu-burger-item" href="#presentation">
+              <Link className="menu-burger-item" to="/presentation">
                 Présentation
-              </a>
+              </Link>
             </MenuItem>
             <MenuItem onClick={handleClose}>
-              <a className="menu-burger-item" href="#competences">
+              <Link className="menu-burger-item" to="/competences">
                 Compétences
-              </a>
+              </Link>
             </MenuItem>
             <MenuItem onClick={handleClose}>
-              <a className="menu-burger-item" href="#projets">
+              <Link className="menu-burger-item" to="/projets">
                 Projets
-              </a>
+              </Link>
             </MenuItem>
           </Menu>
         </IconButton>

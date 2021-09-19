@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -16,6 +17,7 @@ import Converter from "../../img/Converter-spe-react.png";
 import Chatroom from "../../img/Chatroom-spe-react.png";
 import Weather from "../../img/WeatherApp.png";
 import github from "../../img/github.png";
+import ViewCompactIcon from "@mui/icons-material/ViewCompact";
 
 import "./style.css";
 
@@ -56,30 +58,12 @@ const Projets = () => {
               </Typography>
             </CardContent>
           </CardActionArea>
-          <CardActions>
-            <Button size="small" color="primary">
-              <GitHubIcon style={{ color: "black", margin: "1rem" }} />
-              <a
-                className="Projets__card__link"
-                target="_blank"
-                rel="noreferrer"
-                href="/culturabaguete"
-              >
+          <CardActions className="Projets__card__button">
+            <Button variant="outlined" size="small">
+              <ViewCompactIcon style={{ color: "white", margin: "1rem" }} />
+              <Link className="Projets__card__link" to="projets/culturabaguete">
                 Voir le projet
-              </a>
-            </Button>
-          </CardActions>
-          <CardActions>
-            <Button size="small" color="primary">
-              <YouTubeIcon style={{ color: "black", margin: "1rem" }} />
-              <a
-                className="Projets__card__link"
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.youtube.com/watch?v=Jyh9R5xPMuM&t=2343s"
-              >
-                Voir la présentation du projet
-              </a>
+              </Link>
             </Button>
           </CardActions>
         </Card>
@@ -108,7 +92,7 @@ const Projets = () => {
           </CardActionArea>
           <CardActions>
             <Button size="small" color="primary">
-              <GitHubIcon style={{ color: "black", margin: "1rem" }} />
+              <GitHubIcon style={{ color: "white", margin: "1rem" }} />
               <a
                 className="Projets__card__link"
                 target="_blank"
@@ -121,7 +105,7 @@ const Projets = () => {
           </CardActions>
           <CardActions>
             <Button size="small" color="primary">
-              <YouTubeIcon style={{ color: "black", margin: "1rem" }} />
+              <YouTubeIcon style={{ color: "white", margin: "1rem" }} />
               <a
                 className="Projets__card__link"
                 target="_blank"
@@ -157,7 +141,7 @@ const Projets = () => {
           </CardActionArea>
           <CardActions>
             <Button size="small" color="primary">
-              <GitHubIcon style={{ color: "black", margin: "1rem" }} />
+              <GitHubIcon style={{ color: "white", margin: "1rem" }} />
               <a
                 className="Projets__card__link"
                 target="_blank"
@@ -193,7 +177,7 @@ const Projets = () => {
           </CardActionArea>
           <CardActions>
             <Button size="small" color="primary">
-              <GitHubIcon style={{ color: "black", margin: "1rem" }} />
+              <GitHubIcon style={{ color: "white", margin: "1rem" }} />
               <a
                 className="Projets__card__link"
                 target="_blank"
@@ -229,7 +213,7 @@ const Projets = () => {
           </CardActionArea>
           <CardActions>
             <Button size="small" color="primary">
-              <GitHubIcon style={{ color: "black", margin: "1rem" }} />
+              <GitHubIcon style={{ color: "white", margin: "1rem" }} />
               <a
                 className="Projets__card__link"
                 target="_blank"
