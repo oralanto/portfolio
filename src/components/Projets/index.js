@@ -59,7 +59,7 @@ const Projets = () => {
             </CardContent>
           </CardActionArea>
           <CardActions className="Projets__card__button">
-            <Button variant="outlined" size="small">
+            <Button size="small" color="primary">
               <ViewCompactIcon style={{ color: "white", margin: "1rem" }} />
               <Link className="Projets__card__link" to="projets/culturabaguete">
                 Voir le projet

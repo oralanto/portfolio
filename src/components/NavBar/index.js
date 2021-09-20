@@ -130,6 +130,11 @@ const NavBar = () => {
                 Projets
               </Link>
             </MenuItem>
+            <MenuItem onClick={handleClose}>
+              <Link className="menu-burger-item" to="/contact">
+                Contact
+              </Link>
+            </MenuItem>
           </Menu>
         </IconButton>
       </div>
