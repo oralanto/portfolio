@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -10,11 +11,13 @@ import Typography from "@material-ui/core/Typography";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 
+import culturabaguete from "../../img/culturabaguete.jpeg";
 import Oboardgame from "../../img/Logo-oboardgame.png";
 import Converter from "../../img/Converter-spe-react.png";
 import Chatroom from "../../img/Chatroom-spe-react.png";
 import Weather from "../../img/WeatherApp.png";
 import github from "../../img/github.png";
+import ViewCompactIcon from "@mui/icons-material/ViewCompact";
 
 import "./style.css";
 
@@ -40,6 +43,37 @@ const Projets = () => {
           <CardActionArea>
             <CardMedia
               className={classes.media}
+              image={culturabaguete}
+              title="oboardgame logo"
+            />
+            <CardContent style={{ color: "#CECBC5" }} variant="h6">
+              <Typography gutterBottom variant="h5" component="h2">
+                Cultura Baguete
+              </Typography>
+              <Typography variant="h6" component="p">
+                Site éducatif pour apprendre la culture et la langue française
+              </Typography>
+              <Typography variant="h6" component="p">
+                React-Redux, Node, Express, AWS, MangoDB.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions className="Projets__card__button">
+            <Button size="small" color="primary">
+              <ViewCompactIcon style={{ color: "white", margin: "1rem" }} />
+              <Link className="Projets__card__link" to="projets/culturabaguete">
+                Voir le projet
+              </Link>
+            </Button>
+          </CardActions>
+        </Card>
+        <Card
+          style={{ backgroundColor: "#41464B" }}
+          className={classes.root + " Projets__card"}
+        >
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
               image={Oboardgame}
               title="oboardgame logo"
             />
@@ -58,7 +92,7 @@ const Projets = () => {
           </CardActionArea>
           <CardActions>
             <Button size="small" color="primary">
-              <GitHubIcon style={{ color: "black", margin: "1rem" }} />
+              <GitHubIcon style={{ color: "white", margin: "1rem" }} />
               <a
                 className="Projets__card__link"
                 target="_blank"
@@ -71,7 +105,7 @@ const Projets = () => {
           </CardActions>
           <CardActions>
             <Button size="small" color="primary">
-              <YouTubeIcon style={{ color: "black", margin: "1rem" }} />
+              <YouTubeIcon style={{ color: "white", margin: "1rem" }} />
               <a
                 className="Projets__card__link"
                 target="_blank"
@@ -107,7 +141,7 @@ const Projets = () => {
           </CardActionArea>
           <CardActions>
             <Button size="small" color="primary">
-              <GitHubIcon style={{ color: "black", margin: "1rem" }} />
+              <GitHubIcon style={{ color: "white", margin: "1rem" }} />
               <a
                 className="Projets__card__link"
                 target="_blank"
@@ -143,7 +177,7 @@ const Projets = () => {
           </CardActionArea>
           <CardActions>
             <Button size="small" color="primary">
-              <GitHubIcon style={{ color: "black", margin: "1rem" }} />
+              <GitHubIcon style={{ color: "white", margin: "1rem" }} />
               <a
                 className="Projets__card__link"
                 target="_blank"
@@ -179,7 +213,7 @@ const Projets = () => {
           </CardActionArea>
           <CardActions>
             <Button size="small" color="primary">
-              <GitHubIcon style={{ color: "black", margin: "1rem" }} />
+              <GitHubIcon style={{ color: "white", margin: "1rem" }} />
               <a
                 className="Projets__card__link"
                 target="_blank"

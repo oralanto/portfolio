@@ -7,7 +7,7 @@ const Presentation = () => {
     <div className="Presentation" id="presentation">
       <h2 className="Presentation__title">Présentation</h2>
       <p className="Presentation__text">
-        Bonjour et bienvenue sur mon portfolio, je m'appelle Osée, j'ai 26 ans
+        Bonjour et bienvenue sur mon portfolio, je m'appelle Osée, j'ai 27 ans
         et je suis développeur web.
       </p>
       <p className="Presentation__text">
@@ -23,24 +23,8 @@ const Presentation = () => {
         m'adapte aux technologies utilisés. J'aime partager mon savoir-faire au
         sein d'une ambiance collaborative et positive.
       </p>
-      <p className="Presentation__text">
-        Je cherche en priorité un contrat en télétravail.
-      </p>
     </div>
   );
 };
-
-// const style = {
-//   presentation: {
-//     minHeight: "100vh",
-//     height: "auto",
-//     backgroundImage: circleScatter,
-//     backgroundSize: "cover",
-//     display: "flex",
-//     flexDirection: "column",
-//     justifyContent: "space-between",
-//     padding: "2em",
-//   },
-// };
 
 export default Presentation;

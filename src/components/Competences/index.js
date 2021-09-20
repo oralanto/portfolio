@@ -8,10 +8,10 @@ const Competences = () => {
       <h2 className="Competences__title">Compétences</h2>
       <div className="Competences__list">
         <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          HTML
+          HTML5/CSS3
         </p>
         <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          CSS
+          SCSS/SASS
         </p>
         <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
           Javascript
@@ -39,6 +39,15 @@ const Competences = () => {
         </p>
         <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
           Git/Github
+        </p>
+        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
+          Jira
+        </p>
+        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
+          MangoDB
+        </p>
+        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
+          AWS
         </p>
       </div>
     </div>

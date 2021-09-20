@@ -19,12 +19,6 @@
   padding: 1em;
 }
 
-.logo {
-  position: absolute;
-  top: 0px;
-  left: 20px;
-}
-
 .menu {
   width: 80%;
   display: flex;
@@ -33,17 +27,17 @@
 }
 
 .menu-item {
-  padding: .3em;
+  padding: 0.3em;
   margin: 1em;
   border-radius: 10px;
   font-weight: bold;
   font-size: 1.7em;
   transition-duration: 150ms;
-  color: #CECBC5;
+  color: #cecbc5;
   text-decoration: none;
 }
 .menu-burger-item {
-  padding: .5em;
+  padding: 0.5em;
   font-weight: bold;
   font-size: 1em;
   color: #000000;
@@ -51,8 +45,8 @@
 }
 
 .menu-item:hover {
-  border: #CECBC5 2px solid;
-  background-color: #41464B;
+  border: #cecbc5 2px solid;
+  background-color: #41464b;
 }
 
 .infos {
@@ -60,7 +54,7 @@
 }
 
 .name {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 5em;
 }
 
@@ -79,7 +73,7 @@
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  color: #CECBC5;
+  color: #cecbc5;
   margin: auto;
   padding: 1em;
   border-radius: 20px;
@@ -114,7 +108,7 @@
 
   .name {
     font-size: 3em;
-    margin-bottom: .2em;
+    margin-bottom: 0.2em;
   }
 
   .title-job {
@@ -126,6 +120,6 @@
   }
 
   .linkedin-text {
-    margin: .2em;
+    margin: 0.2em;
   }
-};
+} ;
