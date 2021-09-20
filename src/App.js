@@ -7,6 +7,7 @@ import Presentation from "./components/Presentation";
 import Competences from "./components/Competences";
 import Footer from "./components/Footer";
 import Projets from "./components/Projets";
+import Contact from "./components/Contact";
 import CulturaBaguete from "./components/Projets/CulturaBaguete";
 
 import "./App.css";
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/presentation" component={Presentation} />
           <Route exact path="/competences" component={Competences} />
           <Route exact path="/projets" component={Projets} />
+          <Route exact path="/contact" component={Contact} />
           <Route
             exact
             path="/projets/culturabaguete"
