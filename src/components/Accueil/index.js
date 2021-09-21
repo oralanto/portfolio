@@ -18,12 +18,12 @@ const Accueil = () => {
           rel="noreferrer"
           href="https://www.linkedin.com/in/os%C3%A9e-ralantoarison-2b2265195/"
         >
+          <h3 className="linkedin-text">Mon profil Linkedin</h3>
           <img
             className="linkedin-logo"
             src={linkedin}
             alt="Icon linkedin développeur web"
           />
-          <p className="linkedin-text">Mon profil Linkedin</p>
         </a>
       </Button>
     </div>

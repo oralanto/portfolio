@@ -233,12 +233,12 @@ const Projets = () => {
           rel="noreferrer"
           href="https://www.github.com/oralanto/"
         >
+          <p className="Projets__github__text">Mon Github</p>
           <img
             className="Projets__github__logo"
             src={github}
             alt="Icon Github"
           />
-          <p className="Projets__github__text">Mon Github</p>
         </a>
       </Button>
     </div>

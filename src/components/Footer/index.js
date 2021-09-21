@@ -5,7 +5,7 @@ import "./style.css";
 const Footer = () => {
   return (
     <div className="Footer">
-      <p className="Footer__text">Osée Ralantoarison © 2021 </p>
+      <p className="Footer__text">© 2021 Osée Ralantoarison</p>
     </div>
   );
 };
