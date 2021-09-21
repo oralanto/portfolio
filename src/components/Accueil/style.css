@@ -3,15 +3,13 @@
   height: auto;
   background-image: url("../../img/apple-desk.jpeg");
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 2em;
+  color: #cecbc5;
 }
-
-/* .test {
-  border: 1px #f0f solid;
-} */
 
 .header {
   justify-content: space-between;
@@ -92,7 +90,9 @@
 
 .linkedin-text {
   font-size: 1.5em;
-  margin-top: 1em;
+  font-weight: bolder;
+  text-shadow: 2px 0 0 black;
+  margin-bottom: 1em;
 }
 
 /* Responsive */

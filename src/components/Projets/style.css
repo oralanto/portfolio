@@ -1,16 +1,21 @@
 .Projets {
   height: auto;
-  background-image: url("../../img/blob-scatter-haikei.svg");
+  min-height: 100vh;
+  background-image: url("../../img/react-code.jpeg");
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 2em;
+  color: #cecbc5;
 }
 
 .Projets__title {
   font-family: "Bebas Neue", cursive;
-  font-size: 5em;
+  font-size: 6em;
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
   margin-bottom: 1em;
 }
 
@@ -88,7 +93,10 @@
 }
 
 .Projets__github__text {
-  margin-top: 1em;
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-shadow: 2px 0 0 black;
+  margin-bottom: 1em;
 }
 
 /* Responsive */
