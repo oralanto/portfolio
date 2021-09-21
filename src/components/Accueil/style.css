@@ -3,6 +3,7 @@
   height: auto;
   background-image: url("../../img/apple-desk.jpeg");
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
