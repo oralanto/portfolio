@@ -1,54 +1,32 @@
 import React from "react";
 
 import "./style.css";
-
 const Competences = () => {
   return (
-    <div className="Competences" id="competences">
-      <h2 className="Competences__title">Compétences</h2>
+    <div
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        color: "#cecbc5",
+      }}
+    >
+      <h1 className="Competences__title">Compétences</h1>
       <div className="Competences__list">
-        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          HTML5/CSS3
-        </p>
-        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          SCSS/SASS
-        </p>
-        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          Javascript
-        </p>
-        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          React
-        </p>
-        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          Redux
-        </p>
-        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          Material-ui
-        </p>
-        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          Bootstrap
-        </p>
-        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          Node
-        </p>
-        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          Express
-        </p>
-        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          PostgreSQL
-        </p>
-        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          Git/Github
-        </p>
-        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          Jira
-        </p>
-        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          MangoDB
-        </p>
-        <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>
-          AWS
-        </p>
+        <p className="Competences__item">HTML5/CSS3</p>
+        <p className="Competences__item">SCSS/SASS</p>
+        <p className="Competences__item">Javascript</p>
+        <p className="Competences__item">React</p>
+        <p className="Competences__item">Redux</p>
+        <p className="Competences__item">Material-ui</p>
+        <p className="Competences__item">Bootstrap</p>
+        <p className="Competences__item">Node</p>
+        <p className="Competences__item">Express</p>
+        <p className="Competences__item">PostgreSQL</p>
+        <p className="Competences__item">Git/Github</p>
+        <p className="Competences__item">Jira</p>
+        <p className="Competences__item">MangoDB</p>
+        <p className="Competences__item">AWS</p>
       </div>
     </div>
   );
