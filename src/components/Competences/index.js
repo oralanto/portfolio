@@ -1,10 +1,20 @@
 import React from "react";
 
 import "./style.css";
-
+import Background from "../../img/laptop.jpeg";
 const Competences = () => {
   return (
-    <div className="Competences" id="competences">
+    <div
+      style={{
+        minHeight: "100vh",
+        backgroundImage: `url('${Background}')`,
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+        display: "flex",
+        flexDirection: "column",
+        color: "#cecbc5",
+      }}
+    >
       <h2 className="Competences__title">Compétences</h2>
       <div className="Competences__list">
         <p className="Competences__item" style={{ backgroundColor: "#CECBC5" }}>

@@ -13,8 +13,18 @@ import ListCours from "./imgProjets/Liste-cours.png";
 
 const CulturaBaguete = () => {
   return (
-    <div style={{ minHeight: "100vh" }}>
-      <h1 style={{ fontSize: "6em" }}>Cultura Baguete</h1>
+    <div style={{ minHeight: "100vh", color: "#cecbc5" }}>
+      <h1
+        style={{
+          fontFamily: "'Bebas Neue', cursive",
+          fontSize: "6em",
+          fontWeight: "bolder",
+          letterSpacing: "0.5rem",
+          marginBottom: "1em",
+        }}
+      >
+        Cultura Baguete
+      </h1>
       <p style={{ fontSize: "2em", margin: "2em" }}>
         Durant mon stage effectué dans la startup "Cultura baguete", j'ai pu
         coder et implémenter de nombreuses fonctionnalités. De la création des
@@ -31,7 +41,12 @@ const CulturaBaguete = () => {
       </p>
       <div style={{ width: "100%" }}>
         <ImageList
-          style={{ width: "auto", margin: "1em" }}
+          style={{
+            width: "90%",
+            margin: "auto",
+            display: "flex",
+            flexWrap: "wrap",
+          }}
           sx={{ width: "50%", height: "auto" }}
         >
           <ImageListItem>
