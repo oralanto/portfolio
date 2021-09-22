@@ -60,6 +60,13 @@
   font-size: 3em;
 }
 
+.introduction {
+  font-size: 2em;
+  margin: 1em;
+  color: #cecbc5;
+  line-height: 1.2em;
+}
+
 .linkedin {
   width: 20%;
   height: 20%;
