@@ -72,6 +72,11 @@ const NavBar = () => {
               </Link>
             </Button>
             <Button color="inherit">
+              <Link className="menu-item disabled" to="/Presentation">
+                Presentation
+              </Link>
+            </Button>
+            <Button color="inherit">
               <Link className="menu-item disabled" to="/competences">
                 Compétences
               </Link>
@@ -108,6 +113,11 @@ const NavBar = () => {
             <MenuItem onClick={handleClose}>
               <Link className="menu-burger-item" to="/">
                 Accueil
+              </Link>
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
+              <Link className="menu-burger-item" to="/Presentation">
+                Présentation
               </Link>
             </MenuItem>
             <MenuItem onClick={handleClose}>

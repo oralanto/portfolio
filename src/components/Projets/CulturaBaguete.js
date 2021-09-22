@@ -25,20 +25,30 @@ const CulturaBaguete = () => {
       >
         Cultura Baguete
       </h1>
-      <p style={{ fontSize: "2em", margin: "2em" }}>
-        Durant mon stage effectué dans la startup "Cultura baguete", j'ai pu
-        coder et implémenter de nombreuses fonctionnalités. De la création des
-        exercices au moyen de payement avec Stripe en passant par la
-        modification de profil.{" "}
-      </p>
-      <p style={{ fontSize: "2em", margin: "2em" }}>
-        La version MVP de ce projet m'as permis d'apprendre et me documenter sur
-        plusieurs technologies. Le design du site était libre lors de la phase
-        de développement, il passera ensuite entre les mains d'un designer.{" "}
-      </p>
-      <p style={{ fontSize: "2em", margin: "2em" }}>
-        Voici quelque images du site en attendant qu'il soit en ligne :{" "}
-      </p>
+      <div
+        style={{
+          backgroundColor: "#5b6162",
+          borderRadius: "20px",
+          margin: "2em",
+          padding: "1em",
+        }}
+      >
+        <p style={{ fontSize: "2em", margin: "2em", color: "#cecbc5" }}>
+          Durant mon stage effectué dans la startup "Cultura baguete", j'ai pu
+          coder et implémenter de nombreuses fonctionnalités. De la création des
+          exercices au moyen de payement avec Stripe en passant par la
+          modification de profil.{" "}
+        </p>
+        <p style={{ fontSize: "2em", margin: "2em", color: "#cecbc5" }}>
+          La version MVP de ce projet m'as permis d'apprendre et me documenter
+          sur plusieurs technologies. Le design du site était libre lors de la
+          phase de développement, il passera ensuite entre les mains d'un
+          designer.{" "}
+        </p>
+        <p style={{ fontSize: "2em", margin: "2em", color: "#cecbc5" }}>
+          Voici quelque images du site en attendant qu'il soit en ligne :{" "}
+        </p>
+      </div>
       <div style={{ width: "100%" }}>
         <ImageList
           style={{

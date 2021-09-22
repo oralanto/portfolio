@@ -1,13 +1,8 @@
 import React from "react";
 
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
 import MailIcon from "@mui/icons-material/Mail";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import RoomIcon from "@mui/icons-material/Room";
-
-import "./style.css";
 
 const Contact = () => {
   return (
@@ -27,29 +22,49 @@ const Contact = () => {
           width: "60%",
         }}
       >
-        <List
-          sx={{
-            maxWidth: 500,
-            bgcolor: "#5B6162",
-            borderRadius: "5px",
+        <div
+          style={{
+            backgroundColor: "#5B6162",
+            borderRadius: "20px",
             margin: "auto",
+            padding: "3em",
+            display: "flex",
+            flexDirection: "column",
+            alignContent: "flex-start",
           }}
         >
-          <ListItem>
-            <RoomIcon />
-            <ListItemText style={{ marginLeft: "1em", fontSize: "2em" }}>
+          <div
+            style={{
+              borderBottom: "1px solid #3E4347",
+              margin: "1em",
+              padding: "1em",
+            }}
+          >
+            <p style={{ fontSize: "2em", textAlign: "start" }}>
+              <RoomIcon style={{ marginRight: "2em" }} />
               Genève et périphérie / Haute-savoie / remote friendly
-            </ListItemText>
-          </ListItem>
-          <ListItem>
-            <MailIcon />
-            <ListItemText style={{ marginLeft: "1em", fontSize: "2em" }}>
+            </p>
+          </div>
+          <div
+            style={{
+              borderBottom: "1px solid #3E4347",
+              margin: "1em",
+              padding: "1em",
+            }}
+          >
+            <p style={{ fontSize: "2em", textAlign: "start" }}>
+              <MailIcon style={{ marginRight: "2em" }} />
               o.ralanto@gmail.com
-            </ListItemText>
-          </ListItem>
-          <ListItem>
-            <LinkedInIcon />
-            <ListItemText style={{ marginLeft: "1em", fontSize: "2em" }}>
+            </p>
+          </div>
+          <div
+            style={{
+              margin: "1em",
+              padding: "1em",
+            }}
+          >
+            <p style={{ fontSize: "2em", textAlign: "start" }}>
+              <LinkedInIcon style={{ marginRight: "2em" }} />
               <a
                 href="https://www.linkedin.com/in/osée-ralantoarison"
                 target="_blank"
@@ -58,9 +73,9 @@ const Contact = () => {
               >
                 Osée Ralantoarison
               </a>
-            </ListItemText>
-          </ListItem>
-        </List>
+            </p>
+          </div>
+        </div>
       </div>
       <div
         style={{
@@ -68,7 +83,13 @@ const Contact = () => {
           width: "60%",
         }}
       >
-        <p style={{ fontStyle: "italic", fontSize: "2em" }}>
+        <p
+          style={{
+            fontStyle: "italic",
+            fontSize: "2em",
+            mixBlendMode: "difference",
+          }}
+        >
           « En suivant le chemin qui s'appelle plus tard, nous arrivons sur la
           place qui s'appelle jamais. », Sénèque.
         </p>
