@@ -6,14 +6,14 @@ import "./style.css";
 
 const Accueil = () => {
   return (
-    <div className="Accueil" id="acceuil">
+    <div className="Accueil">
       <div className="infos">
         <h2 className="name">Osée Ralantoarison</h2>
         <h1 className="title-job">Développeur web</h1>
       </div>
       <div
         style={{
-          backgroundColor: "#5b6162",
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
           borderRadius: "20px",
           margin: "2em",
           padding: "1em",

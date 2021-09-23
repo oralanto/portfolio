@@ -7,7 +7,6 @@ import RoomIcon from "@mui/icons-material/Room";
 const Contact = () => {
   return (
     <div
-      className="Contact"
       style={{
         minHeight: "100vh",
         display: "flex",
@@ -16,6 +15,17 @@ const Contact = () => {
         color: "#cecbc5",
       }}
     >
+      <h1
+        style={{
+          fontFamily: "'Bebas Neue', cursive",
+          fontSize: "6em",
+          fontWeight: "borlder",
+          letterSpacing: "0.5rem",
+          margin: "1em",
+        }}
+      >
+        Contact
+      </h1>
       <div
         style={{
           margin: "auto",
@@ -24,7 +34,7 @@ const Contact = () => {
       >
         <div
           style={{
-            backgroundColor: "#5B6162",
+            backgroundColor: "rgba(0, 0, 0, 0.7)",
             borderRadius: "20px",
             margin: "auto",
             padding: "3em",
@@ -35,9 +45,9 @@ const Contact = () => {
         >
           <div
             style={{
-              borderBottom: "1px solid #3E4347",
+              borderBottom: "1px solid #cecbc5",
               margin: "1em",
-              padding: "1em",
+              padding: "1em 1em 2.5em",
             }}
           >
             <p style={{ fontSize: "2em", textAlign: "start" }}>
@@ -47,9 +57,9 @@ const Contact = () => {
           </div>
           <div
             style={{
-              borderBottom: "1px solid #3E4347",
+              borderBottom: "1px solid #cecbc5",
               margin: "1em",
-              padding: "1em",
+              padding: "1em 1em 2.5em",
             }}
           >
             <p style={{ fontSize: "2em", textAlign: "start" }}>
