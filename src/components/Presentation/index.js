@@ -13,7 +13,7 @@ const presentation = () => {
       <h1 className="title">Présentation</h1>
       <div
         style={{
-          backgroundColor: "#5b6162",
+          backgroundColor: "rgba(0, 0, 0, 0.8)",
           borderRadius: "20px",
           margin: "2em",
           padding: "1em",
@@ -24,14 +24,14 @@ const presentation = () => {
           suis née, j'ai grandi et je vis en Haute-Savoie (74).
         </p>{" "}
         <p className="introduction">
-          Les "nouvelles technologie" dans le sens large du terme, je mis suis
-          intéressé depuis petit. Smartphone, ordinateur, jeux vidéo,
-          intelligence artificielle, chaque programme me remplit de curiosités.
-          J’ai donc commencé à chercher des informations sur la conception d’un
-          programme, dans cet immense océan d’information, je suis tombé sur la
-          programmation, le développement web, Java, Python, JavaScript… Ceci a
-          encore plus ouvert ma curiosité, alors j’ai voulu apprendre et j’ai
-          appris.
+          Les "nouvelles technologie" dans le sens large du terme, m'ont
+          intéressé depuis mon plus jeune âge. Smartphone, ordinateur, jeux
+          vidéo, intelligence artificielle, chaque programme me remplit de
+          curiosités. J’ai donc commencé à chercher des informations sur la
+          conception d’un programme, dans cet immense océan d’information, je
+          suis tombé sur la programmation, le développement web, Java, Python,
+          JavaScript… Ceci a encore plus ouvert ma curiosité, alors j’ai voulu
+          apprendre et j’ai appris.
         </p>{" "}
         <p className="introduction">
           Autodidacte depuis de nombreuse années, j'ai découvert et commencer à
