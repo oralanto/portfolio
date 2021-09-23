@@ -99,6 +99,21 @@
   margin-bottom: 1em;
 }
 
+.projet-presentation {
+  font-size: 2em;
+  margin: 1em;
+  color: #cecbc5;
+  line-height: 1.2em;
+}
+
+.projet-presentation-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  margin: 2em auto;
+  padding: 1em;
+  width: 90%;
+}
+
 /* Responsive */
 
 @media (max-width: 959px) {
@@ -113,5 +128,11 @@
   }
   .Projets__card {
     width: 100%;
+  }
+  .projet-presentation {
+    font-size: 1.3em;
+  }
+  .projet-presentation-card {
+    padding: 0.2em;
   }
 }

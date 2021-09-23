@@ -11,6 +11,8 @@ import ExerciceImage from "./imgProjets/Exercice-image.png";
 import ExerciseOral from "./imgProjets/Exercise-oral.png";
 import ListCours from "./imgProjets/Liste-cours.png";
 
+import "./style.css";
+
 const slideImages = [
   Accueil,
   Cours,
@@ -24,38 +26,21 @@ const slideImages = [
 const CulturaBaguete = () => {
   return (
     <div style={{ minHeight: "100vh", color: "#cecbc5" }}>
-      <h1
-        style={{
-          fontFamily: "'Bebas Neue', cursive",
-          fontSize: "6em",
-          fontWeight: "bolder",
-          letterSpacing: "0.5rem",
-          margin: "1em",
-        }}
-      >
-        Cultura Baguete
-      </h1>
-      <div
-        style={{
-          backgroundColor: "rgba(0, 0, 0, 0.6)",
-          borderRadius: "20px",
-          margin: "2em",
-          padding: "1em",
-        }}
-      >
-        <p style={{ fontSize: "2em", margin: "2em", color: "#cecbc5" }}>
+      <h1 className="Projets__title">Cultura Baguete</h1>
+      <div className="projet-presentation-card">
+        <p className="projet-presentation">
           Durant mon stage effectué dans la startup "Cultura baguete", j'ai pu
           coder et implémenter de nombreuses fonctionnalités. De la création des
           exercices au moyen de payement avec Stripe en passant par la
           modification de profil.{" "}
         </p>
-        <p style={{ fontSize: "2em", margin: "2em", color: "#cecbc5" }}>
+        <p className="projet-presentation">
           La version MVP de ce projet m'as permis d'apprendre et me documenter
           sur plusieurs technologies. Le design du site était libre lors de la
           phase de développement, il passera ensuite entre les mains d'un
           designer.{" "}
         </p>
-        <p style={{ fontSize: "2em", margin: "2em", color: "#cecbc5" }}>
+        <p className="projet-presentation">
           Voici quelque images du site en attendant qu'il soit en ligne :{" "}
         </p>
       </div>
@@ -73,14 +58,8 @@ const CulturaBaguete = () => {
           </Zoom>
         </div>
       </div>
-      <div
-        style={{
-          width: "90%",
-          margin: "auto",
-          backgroundColor: "rgba(0, 0, 0, 0.7)",
-        }}
-      >
-        <p style={{ fontSize: "2em", margin: "2em", padding: "1em" }}>
+      <div className="projet-presentation-card">
+        <p className="projet-presentation">
           Les principales technologies utilisées sont : React, Redux, Bootstrap,
           Material-UI, CSS3, Chart, Calendly, Stripe, Node, Express, MangoDB,
           AWS.{" "}

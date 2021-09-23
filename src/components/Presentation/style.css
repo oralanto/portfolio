@@ -13,3 +13,12 @@
   color: #cecbc5;
   line-height: 1.2em;
 }
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 3em;
+  }
+  .introduction {
+    font-size: 1.3em;
+  }
+}

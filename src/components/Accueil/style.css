@@ -63,6 +63,12 @@
   color: #cecbc5;
   line-height: 1.2em;
 }
+.introduction-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin: 2em;
+  padding: 1em;
+}
 
 .linkedin {
   width: 20%;
@@ -125,5 +131,14 @@
 
   .linkedin-text {
     margin: 0.2em;
+  }
+
+  .introduction {
+    font-size: 1.3em;
+  }
+
+  .introduction-card {
+    width: 90%;
+    margin: auto;
   }
 } ;
