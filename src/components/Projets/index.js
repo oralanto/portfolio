@@ -33,11 +33,11 @@ const useStyles = makeStyles({
 const Projets = () => {
   const classes = useStyles();
   return (
-    <div className="Projets" id="projets">
+    <div className="Projets">
       <h2 className="Projets__title">Projets</h2>
       <div className="Projets__cards">
         <Card
-          style={{ backgroundColor: "#41464B" }}
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
           className={classes.root + " Projets__card"}
         >
           <CardActionArea>
@@ -68,7 +68,7 @@ const Projets = () => {
           </CardActions>
         </Card>
         <Card
-          style={{ backgroundColor: "#41464B" }}
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
           className={classes.root + " Projets__card"}
         >
           <CardActionArea>
@@ -118,7 +118,7 @@ const Projets = () => {
           </CardActions>
         </Card>
         <Card
-          style={{ backgroundColor: "#41464B" }}
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
           className={classes.root + " Projets__card"}
         >
           <CardActionArea>
@@ -154,7 +154,7 @@ const Projets = () => {
           </CardActions>
         </Card>
         <Card
-          style={{ backgroundColor: "#41464B" }}
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
           className={classes.root + " Projets__card"}
         >
           <CardActionArea>
@@ -190,7 +190,7 @@ const Projets = () => {
           </CardActions>
         </Card>
         <Card
-          style={{ backgroundColor: "#41464B" }}
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
           className={classes.root + " Projets__card"}
         >
           <CardActionArea>
@@ -199,7 +199,12 @@ const Projets = () => {
               image={Weather}
               title="weather app image"
             />
-            <CardContent style={{ color: "#CECBC5" }} variant="h6">
+            <CardContent
+              style={{
+                color: "#CECBC5",
+              }}
+              variant="h6"
+            >
               <Typography gutterBottom variant="h5" component="h2">
                 Weather app
               </Typography>
@@ -233,7 +238,7 @@ const Projets = () => {
           rel="noreferrer"
           href="https://www.github.com/oralanto/"
         >
-          <p className="Projets__github__text">Mon Github</p>
+          <h2 className="Projets__github__text">Github</h2>
           <img
             className="Projets__github__logo"
             src={github}

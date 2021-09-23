@@ -13,20 +13,20 @@ const Competences = () => {
     >
       <h1 className="Competences__title">Compétences</h1>
       <div className="Competences__list">
-        <p className="Competences__item">HTML5/CSS3</p>
-        <p className="Competences__item">SCSS/SASS</p>
-        <p className="Competences__item">Javascript</p>
-        <p className="Competences__item">React</p>
-        <p className="Competences__item">Redux</p>
-        <p className="Competences__item">Material-ui</p>
-        <p className="Competences__item">Bootstrap</p>
-        <p className="Competences__item">Node</p>
-        <p className="Competences__item">Express</p>
-        <p className="Competences__item">PostgreSQL</p>
-        <p className="Competences__item">Git/Github</p>
-        <p className="Competences__item">Jira</p>
-        <p className="Competences__item">MangoDB</p>
-        <p className="Competences__item">AWS</p>
+        <h2 className="Competences__item">HTML5/CSS3</h2>
+        <h2 className="Competences__item">SCSS/SASS</h2>
+        <h2 className="Competences__item">Javascript</h2>
+        <h2 className="Competences__item">React</h2>
+        <h2 className="Competences__item">Redux</h2>
+        <h2 className="Competences__item">Material-ui</h2>
+        <h2 className="Competences__item">Bootstrap</h2>
+        <h2 className="Competences__item">Node</h2>
+        <h2 className="Competences__item">Express</h2>
+        <h2 className="Competences__item">PostgreSQL</h2>
+        <h2 className="Competences__item">Git/Github</h2>
+        <h2 className="Competences__item">Jira</h2>
+        <h2 className="Competences__item">MangoDB</h2>
+        <h2 className="Competences__item">AWS</h2>
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 import React from "react";
 
-import "./style.css";
-
 const Footer = () => {
   return (
-    <div className="Footer">
-      <p className="Footer__text">© 2021 Osée Ralantoarison</p>
+    <div style={{ padding: "1.5em", backgroundColor: "rgba(0, 0, 0, 0.7)" }}>
+      <p style={{ fontSize: "1.5em", color: "#cecbc5" }}>
+        © 2021 Osée Ralantoarison
+      </p>
     </div>
   );
 };

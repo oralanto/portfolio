@@ -6,19 +6,12 @@ import "./style.css";
 
 const Accueil = () => {
   return (
-    <div className="Accueil" id="acceuil">
+    <div className="Accueil">
       <div className="infos">
         <h2 className="name">Osée Ralantoarison</h2>
         <h1 className="title-job">Développeur web</h1>
       </div>
-      <div
-        style={{
-          backgroundColor: "#5b6162",
-          borderRadius: "20px",
-          margin: "2em",
-          padding: "1em",
-        }}
-      >
+      <div className="introduction-card">
         <p className="introduction">Bonjour et bienvenue sur mon portfolio.</p>{" "}
         <p className="introduction">
           Vous trouverez ici toutes les informations me concernant, bonne visite

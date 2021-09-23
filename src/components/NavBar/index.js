@@ -17,9 +17,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   header: {
-    backgroundColor: "#5B6162",
+    backgroundColor: "rgba(0, 0, 0, 0.8)",
     color: "black",
-    borderBottom: ".5px solid white",
+    borderBottom: ".5px solid black",
   },
   logo: {
     position: "absolute",

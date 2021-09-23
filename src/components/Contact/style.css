@@ -1,0 +1,36 @@
+.contact-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 6em;
+  font-weight: borlder;
+  letter-spacing: 0.5rem;
+  margin: 1em;
+}
+.contact-card {
+  margin: auto;
+  width: 60%;
+  max-width: 900px;
+}
+.contact-info {
+  font-size: 2em;
+  text-align: start;
+}
+.citation {
+  font-style: italic;
+  font-size: 2em;
+  mix-blend-mode: difference;
+}
+
+@media (max-width: 900px) {
+  .contact-title {
+    font-size: 3em;
+  }
+  .contact-info {
+    font-size: 1em;
+  }
+  .citation {
+    font-size: 1em;
+  }
+  .contact-card {
+    width: 90%;
+  }
+}

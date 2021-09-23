@@ -3,7 +3,7 @@
   font-size: 6em;
   font-weight: bolder;
   letter-spacing: 0.5rem;
-  margin-bottom: 1em;
+  margin: 1em;
   color: #cecbc5;
 }
 
@@ -12,4 +12,13 @@
   margin: 1em;
   color: #cecbc5;
   line-height: 1.2em;
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 3em;
+  }
+  .introduction {
+    font-size: 1.3em;
+  }
 }
