@@ -17,6 +17,7 @@ const Competences = () => {
         <h2 className="Competences__item">SCSS/SASS</h2>
         <h2 className="Competences__item">Javascript</h2>
         <h2 className="Competences__item">React</h2>
+        <h2 className="Competences__item">React-native</h2>
         <h2 className="Competences__item">Redux</h2>
         <h2 className="Competences__item">Material-ui</h2>
         <h2 className="Competences__item">Bootstrap</h2>
@@ -25,6 +26,7 @@ const Competences = () => {
         <h2 className="Competences__item">PostgreSQL</h2>
         <h2 className="Competences__item">Git/Github</h2>
         <h2 className="Competences__item">Jira</h2>
+        <h2 className="Competences__item">Jest</h2>
         <h2 className="Competences__item">MangoDB</h2>
         <h2 className="Competences__item">AWS</h2>
       </div>
