@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Projets from "./components/Projets";
 import Contact from "./components/Contact";
 import CulturaBaguete from "./components/Projets/CulturaBaguete";
+import Converter from "./components/Projets/Convertisseur/converter";
 
 import "./App.css";
 
@@ -28,6 +29,7 @@ function App() {
             path="/projets/culturabaguete"
             component={CulturaBaguete}
           />
+          <Route exact path="/projets/converter" component={Converter} />
         </Switch>
       </Router>
       <Footer />
