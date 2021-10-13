@@ -11,7 +11,7 @@ const Header = ({ inputValue, setBaseAmountValue }) => (
       className="base-amount"
       min={0}
       value={inputValue}
-      onChange={(event) => setBaseAmountValue(Number(event.target.value))}
+      onChange={(event) => setBaseAmountValue(parseInt(event.target.value, 10))}
     />
     Euro(s)
   </header>

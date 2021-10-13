@@ -70,8 +70,12 @@ class Converter extends React.Component {
     const { baseAmount, currency, search } = this.state;
     const convertedAmount = this.makeConversion();
     const filteredCurrencies = this.getCurrencies();
+    console.log(this.state);
     return (
       <div className="app-converter">
+        <div className="presentation">
+          Les taux de conversion ne sont pas les taux réel du jour
+        </div>
         <div className="converter">
           <Header
             inputValue={baseAmount}

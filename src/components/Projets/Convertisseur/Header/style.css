@@ -24,3 +24,13 @@
     font-size: 2em;
     margin-bottom: .3em;
   }
+
+  .presentation {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    margin: 2em auto;
+    padding: 1em;
+    width: 90%;
+    color: #cecbc5;
+    font-size: 2em;
+  }
