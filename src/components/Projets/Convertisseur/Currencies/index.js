@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import Currency from "./Currency";
 
+import "./style.css";
+
 const Currencies = ({ currencies, onClick, inputValue, setSearchValue }) => {
   const currenciesList = currencies.map((currency) => (
     <Currency onClick={onClick} key={currency.name} text={currency.name} />
@@ -9,7 +11,7 @@ const Currencies = ({ currencies, onClick, inputValue, setSearchValue }) => {
   return (
     <div className="currencies">
       <input
-        className="currencies__input"
+        className="input"
         type="text"
         placeholder="Rechercher une devise"
         value={inputValue}

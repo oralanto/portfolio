@@ -1,0 +1,29 @@
+.currencies {
+  background-color: #f1f1f1;
+  color: #3C1361;
+  max-height: 30vh;
+  overflow: auto;
+}
+.input {
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    border: none;
+    width: 100%;
+    color: #3C1361;
+}
+.input::placeholder {
+      color: #7C5295;
+      font-size: 500;
+      font-style: italic;
+    }
+
+.currency {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #7C5295;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+.currency:hover {
+    background-color: #7C5295;
+    transition: background-color 0.2s;
+  }

@@ -4,6 +4,8 @@ import Header from "../Header";
 import Currencies from "../Currencies";
 import Amount from "../Amount";
 
+import "./style.css";
+
 import currenciesData from "../data/currencies";
 
 class Converter extends React.Component {
@@ -69,18 +71,20 @@ class Converter extends React.Component {
     const convertedAmount = this.makeConversion();
     const filteredCurrencies = this.getCurrencies();
     return (
-      <div className="converter">
-        <Header
-          inputValue={baseAmount}
-          setBaseAmountValue={this.setBaseAmount}
-        />
-        <Currencies
-          onClick={(e) => this.setCurrency(e)}
-          currencies={filteredCurrencies}
-          inputValue={search}
-          setSearchValue={this.setSearch}
-        />
-        <Amount value={convertedAmount} currency={currency} />
+      <div className="app-converter">
+        <div className="converter">
+          <Header
+            inputValue={baseAmount}
+            setBaseAmountValue={this.setBaseAmount}
+          />
+          <Currencies
+            onClick={(e) => this.setCurrency(e)}
+            currencies={filteredCurrencies}
+            inputValue={search}
+            setSearchValue={this.setSearch}
+          />
+          <Amount value={convertedAmount} currency={currency} />
+        </div>
       </div>
     );
   }

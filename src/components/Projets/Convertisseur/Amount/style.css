@@ -1,0 +1,12 @@
+.amount {
+  background-color: #f1f1f1;
+  color: #3C1361;
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid #3C1361;
+}
+.value {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
