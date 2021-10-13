@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Header from "../Header";
 import Currencies from "../Currencies";
@@ -8,41 +8,35 @@ import "./style.css";
 
 import currenciesData from "../data/currencies";
 
-class Converter extends React.Component {
-  state = {
+const Converter = () => {
+  const [state, setState] = useState({
     baseAmount: 1,
     currency: "Swiss Franc",
     search: "",
+  });
+
+  // componentDidUpdate(prevProps, prevState) {
+  //   const { currency } = this.state;
+  //   if (currency !== prevState.currency) {
+  //     this.changePageTitle();
+  //   }
+  // }
+
+  const setBaseAmount = (value) => {
+    setState((state.baseAmount = value));
   };
 
-  componentDidUpdate(prevProps, prevState) {
-    const { currency } = this.state;
-    if (currency !== prevState.currency) {
-      this.changePageTitle();
-    }
-  }
-
-  setBaseAmount = (value) => {
-    this.setState({
-      baseAmount: value,
-    });
+  const setCurrency = (e) => {
+    setState((state.currency = e.target.textContent));
   };
 
-  setCurrency = (e) => {
-    this.setState({
-      currency: (this.state.currency = e.target.textContent),
-    });
+  const setSearch = (value) => {
+    setState((state.search = value));
   };
 
-  setSearch = (value) => {
-    this.setState({
-      search: value,
-    });
-  };
-
-  getCurrencies = () => {
+  const getCurrencies = () => {
     let filteredCurrencies = currenciesData;
-    const { search } = this.state;
+    const { search } = state;
     if (search !== "") {
       filteredCurrencies = currenciesData.filter((currency) => {
         const loweredCurrencies = currency.name.toLowerCase();
@@ -56,7 +50,7 @@ class Converter extends React.Component {
     return filteredCurrencies;
   };
 
-  makeConversion = () => {
+  const makeConversion = () => {
     const { baseAmount, currency } = this.state;
     const foundCurrency = currenciesData.find(
       (element) => element.name === currency
@@ -66,32 +60,26 @@ class Converter extends React.Component {
     return Math.round(convertedAmount * 100) / 100;
   };
 
-  render() {
-    const { baseAmount, currency, search } = this.state;
-    const convertedAmount = this.makeConversion();
-    const filteredCurrencies = this.getCurrencies();
-    console.log(this.state);
-    return (
-      <div className="app-converter">
-        <div className="presentation">
-          Les taux de conversion ne sont pas les taux réel du jour
-        </div>
-        <div className="converter">
-          <Header
-            inputValue={baseAmount}
-            setBaseAmountValue={this.setBaseAmount}
-          />
-          <Currencies
-            onClick={(e) => this.setCurrency(e)}
-            currencies={filteredCurrencies}
-            inputValue={search}
-            setSearchValue={this.setSearch}
-          />
-          <Amount value={convertedAmount} currency={currency} />
-        </div>
+  const { baseAmount, currency, search } = state;
+  const convertedAmount = makeConversion();
+  const filteredCurrencies = getCurrencies();
+  return (
+    <div className="app-converter">
+      <div className="presentation">
+        Les taux de conversion ne sont pas les taux réel du jour
       </div>
-    );
-  }
-}
+      <div className="converter">
+        <Header inputValue={baseAmount} setBaseAmountValue={setBaseAmount} />
+        <Currencies
+          onClick={(e) => setCurrency(e)}
+          currencies={filteredCurrencies}
+          inputValue={search}
+          setSearchValue={setSearch}
+        />
+        <Amount value={convertedAmount} currency={currency} />
+      </div>
+    </div>
+  );
+};
 
 export default Converter;
