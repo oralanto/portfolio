@@ -9,34 +9,27 @@ import "./style.css";
 import currenciesData from "../data/currencies";
 
 const Converter = () => {
-  const [state, setState] = useState({
+  const [data, setData] = useState({
     baseAmount: 1,
     currency: "Swiss Franc",
     search: "",
   });
 
-  // componentDidUpdate(prevProps, prevState) {
-  //   const { currency } = this.state;
-  //   if (currency !== prevState.currency) {
-  //     this.changePageTitle();
-  //   }
-  // }
-
   const setBaseAmount = (value) => {
-    setState((state.baseAmount = value));
+    setData((data.baseAmount = value));
   };
 
   const setCurrency = (e) => {
-    setState((state.currency = e.target.textContent));
+    setData((data.currency = e.target.textContent));
   };
 
   const setSearch = (value) => {
-    setState((state.search = value));
+    setData((data.search = value));
   };
 
   const getCurrencies = () => {
     let filteredCurrencies = currenciesData;
-    const { search } = state;
+    const { search } = data;
     if (search !== "") {
       filteredCurrencies = currenciesData.filter((currency) => {
         const loweredCurrencies = currency.name.toLowerCase();
@@ -60,7 +53,7 @@ const Converter = () => {
     return Math.round(convertedAmount * 100) / 100;
   };
 
-  const { baseAmount, currency, search } = state;
+  const { baseAmount, currency, search } = data;
   const convertedAmount = makeConversion();
   const filteredCurrencies = getCurrencies();
   return (
