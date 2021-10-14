@@ -4,12 +4,19 @@ import Currency from "./Currency";
 
 import "./style.css";
 
-const Currencies = ({ currencies, onClick }) => {
+const Currencies = ({ currencies, onClick, inputValue, setSearchValue }) => {
   const currenciesList = currencies.map((currency) => (
     <Currency onClick={onClick} key={currency.name} text={currency.name} />
   ));
   return (
     <div className="currencies">
+      <input
+        className="input"
+        type="text"
+        placeholder="Rechercher une devise"
+        value={inputValue}
+        onChange={(event) => setSearchValue(event.target.value)}
+      />
       <ul className="currencies__list">{currenciesList}</ul>
     </div>
   );
@@ -20,6 +27,8 @@ Currencies.propTypes = {
     PropTypes.shape({ name: PropTypes.string.isRequired })
   ).isRequired,
   onClick: PropTypes.func.isRequired,
+  inputValue: PropTypes.string.isRequired,
+  setSearchValue: PropTypes.func.isRequired,
 };
 
 export default Currencies;

@@ -12,17 +12,44 @@ const Converter = () => {
   const [data, setData] = useState({
     baseAmount: 1,
     currency: "Swiss Franc",
+    search: "",
   });
 
   const setBaseAmount = (event) => {
     setData({
+      ...data,
       baseAmount: parseInt(event.target.value, 10),
-      currency: data.currency,
     });
   };
 
   const setCurrency = (e) => {
-    setData({ baseAmount: data.baseAmount, currency: e.target.textContent });
+    setData({
+      ...data,
+      currency: e.target.textContent,
+    });
+  };
+
+  const setSearch = (value) => {
+    setData({
+      ...data,
+      search: value,
+    });
+  };
+
+  const getCurrencies = () => {
+    let filteredCurrencies = currenciesData;
+    const { search } = data;
+    if (search !== "") {
+      filteredCurrencies = currenciesData.filter((currency) => {
+        const loweredCurrencies = currency.name.toLowerCase();
+        const loweredSearch = search.toLocaleLowerCase();
+
+        const isIncludeInSearch = loweredCurrencies.includes(loweredSearch);
+        return isIncludeInSearch;
+      });
+    }
+
+    return filteredCurrencies;
   };
 
   const makeConversion = () => {
@@ -35,8 +62,9 @@ const Converter = () => {
     return Math.round(convertedAmount * 100) / 100;
   };
 
-  const { baseAmount, currency } = data;
+  const { baseAmount, currency, search } = data;
   const convertedAmount = makeConversion();
+  const filteredCurrencies = getCurrencies();
   return (
     <div className="app-converter">
       <div className="presentation">
@@ -46,7 +74,9 @@ const Converter = () => {
         <Header inputValue={baseAmount} setBaseAmountValue={setBaseAmount} />
         <Currencies
           onClick={(e) => setCurrency(e)}
-          currencies={currenciesData}
+          currencies={filteredCurrencies}
+          inputValue={search}
+          setSearchValue={setSearch}
         />
         <Amount value={convertedAmount} currency={currency} />
       </div>
