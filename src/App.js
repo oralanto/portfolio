@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import Projets from "./components/Projets";
 import Contact from "./components/Contact";
 import CulturaBaguete from "./components/Projets/CulturaBaguete";
-import Converter from "./components/Projets/Convertisseur/Converter";
+import Converter from "./components/Projets/Convertisseur";
 
 import "./App.css";
 

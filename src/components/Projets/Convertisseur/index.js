@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-import Header from "../Header";
-import Currencies from "../Currencies";
-import Amount from "../Amount";
+import Header from "./Header";
+import Currencies from "./Currencies";
+import Amount from "./Amount";
 
 import "./style.css";
 
-import currenciesData from "../data/currencies";
+import currenciesData from "./data/currencies";
 
 const Converter = () => {
   const [data, setData] = useState({
@@ -44,7 +44,7 @@ const Converter = () => {
   };
 
   const makeConversion = () => {
-    const { baseAmount, currency } = this.state;
+    const { baseAmount, currency } = data;
     const foundCurrency = currenciesData.find(
       (element) => element.name === currency
     );
