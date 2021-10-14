@@ -10,7 +10,7 @@ const presentation = () => {
         justifyContent: "space-between",
       }}
     >
-      <h1 className="title">Présentation</h1>
+      <h1 className="Title">Présentation</h1>
       <div
         style={{
           backgroundColor: "rgba(0, 0, 0, 0.8)",
