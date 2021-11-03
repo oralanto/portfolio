@@ -17,6 +17,8 @@ import Converter from "../../img/Converter-spe-react.png";
 import Chatroom from "../../img/Chatroom-spe-react.png";
 import Weather from "../../img/WeatherApp.png";
 import github from "../../img/github.png";
+import mobilApp from "../../img/mobilApp.png";
+
 import ViewCompactIcon from "@mui/icons-material/ViewCompact";
 
 import "./style.css";
@@ -26,7 +28,9 @@ const useStyles = makeStyles({
     maxWidth: 345,
   },
   media: {
-    height: 300,
+    height: 0,
+    paddingTop: "100%",
+    marginTop: "30",
   },
 });
 
@@ -36,6 +40,42 @@ const Projets = () => {
     <div className="Projets">
       <h2 className="Projets__title">Projets</h2>
       <div className="Projets__cards">
+        <Card
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
+          className={classes.root + " Projets__card"}
+        >
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image={mobilApp}
+              title="mobile app image"
+            />
+            <CardContent style={{ color: "#CECBC5" }} variant="h6">
+              <Typography gutterBottom variant="h5" component="h2">
+                Hip-Hop
+              </Typography>
+              <Typography variant="h6" component="p">
+                Application d'apprentissage à la danse et la culture hip-Hop
+              </Typography>
+              <Typography variant="h6" component="p">
+                React native, css in js
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              <GitHubIcon style={{ color: "white", margin: "1rem" }} />
+              <a
+                className="Projets__card__link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/oralanto/Mobile-app-Hiphop"
+              >
+                Voir le code du projet
+              </a>
+            </Button>
+          </CardActions>
+        </Card>
         <Card
           style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
           className={classes.root + " Projets__card"}
