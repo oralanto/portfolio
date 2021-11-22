@@ -13,7 +13,8 @@ const Competences = () => {
     >
       <h1 className="Title">Compétences</h1>
       <div className="Competences__list">
-        <h2 className="Competences__item">HTML5/CSS3</h2>
+        <h2 className="Competences__item">HTML5</h2>
+        <h2 className="Competences__item">CSS in JS</h2>
         <h2 className="Competences__item">SCSS/SASS</h2>
         <h2 className="Competences__item">Javascript</h2>
         <h2 className="Competences__item">React</h2>
