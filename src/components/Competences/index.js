@@ -11,7 +11,7 @@ const Competences = () => {
         color: "#cecbc5",
       }}
     >
-      <h1 className="Competences__title">Compétences</h1>
+      <h1 className="Title">Compétences</h1>
       <div className="Competences__list">
         <h2 className="Competences__item">HTML5</h2>
         <h2 className="Competences__item">CSS in JS</h2>
