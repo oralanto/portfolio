@@ -73,7 +73,7 @@ const NavBar = () => {
             </Button>
             <Button color="inherit">
               <Link className="menu-item disabled" to="/Presentation">
-                Presentation
+                Présentation
               </Link>
             </Button>
             <Button color="inherit">

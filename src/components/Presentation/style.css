@@ -1,10 +1,17 @@
-.title {
+.title__presentation {
   font-family: "Bebas Neue", cursive;
   font-size: 6em;
   font-weight: bolder;
   letter-spacing: 0.5rem;
   margin: 1em;
   color: #cecbc5;
+}
+
+.subtitle-introduction {
+  font-size: 4em;
+  color: #cecbc5;
+  margin: 1em;
+  text-decoration: underline;
 }
 
 .introduction {
