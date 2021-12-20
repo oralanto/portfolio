@@ -22,7 +22,7 @@
 }
 
 @media (max-width: 900px) {
-  .title {
+  .title__presentation {
     font-size: 3em;
   }
   .introduction {
