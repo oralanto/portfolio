@@ -71,11 +71,11 @@ const NavBar = () => {
                 Accueil
               </Link>
             </Button>
-            <Button color="inherit">
+            {/* <Button color="inherit">
               <Link className="menu-item disabled" to="/Presentation">
                 Présentation
               </Link>
-            </Button>
+            </Button> */}
             <Button color="inherit">
               <Link className="menu-item disabled" to="/competences">
                 Compétences
@@ -98,7 +98,7 @@ const NavBar = () => {
         <IconButton
           edge="start"
           className={classes.menuButton}
-          color="inherit"
+          color="primary"
           aria-label="menu"
           size="medium"
         >
@@ -115,11 +115,11 @@ const NavBar = () => {
                 Accueil
               </Link>
             </MenuItem>
-            <MenuItem onClick={handleClose}>
+            {/* <MenuItem onClick={handleClose}>
               <Link className="menu-burger-item" to="/Presentation">
                 Présentation
               </Link>
-            </MenuItem>
+            </MenuItem> */}
             <MenuItem onClick={handleClose}>
               <Link className="menu-burger-item" to="/competences">
                 Compétences

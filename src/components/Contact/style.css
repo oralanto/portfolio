@@ -6,10 +6,27 @@
   margin: 1em;
 }
 .contact-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
   margin: auto;
+  padding: 1em;
   width: 60%;
   max-width: 900px;
 }
+
+.contact-infos {
+  border-bottom: 1px solid #cecbc5;
+  margin: 1em;
+  padding: 1em 1em 2.5em;
+  display: flex;
+  align-items: center;
+}
+
+.contact__icons {
+  margin-right: 2em;
+  align-self: baseline;
+}
+
 .contact-info {
   font-size: 2em;
   text-align: start;
@@ -18,6 +35,7 @@
   font-style: italic;
   font-size: 2em;
   mix-blend-mode: difference;
+  margin-top: 3em;
 }
 
 @media (max-width: 900px) {
