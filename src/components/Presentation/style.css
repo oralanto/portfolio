@@ -7,7 +7,7 @@
   color: #cecbc5;
 }
 
-.subtitle-introduction {
+.subtitle__introduction {
   font-size: 4em;
   color: #cecbc5;
   margin: 1em;
@@ -25,7 +25,14 @@
   .title__presentation {
     font-size: 3em;
   }
+
   .introduction {
     font-size: 1.3em;
+    margin: 0;
+    line-height: 1em;
+  }
+
+  .subtitle__introduction {
+    font-size: 2em;
   }
 }

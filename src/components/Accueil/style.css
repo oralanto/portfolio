@@ -1,13 +1,9 @@
 .Accueil {
   min-height: 100vh;
   height: auto;
-  background-image: url("../../img/apple-desk.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: #000000;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 2em;
   color: #cecbc5;
 }
 
@@ -46,6 +42,7 @@
 
 .infos {
   padding: 3em;
+  margin-bottom: 3em;
 }
 
 .name {
@@ -64,45 +61,39 @@
   line-height: 1.2em;
 }
 .introduction-card {
-  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   margin: 2em;
   padding: 1em;
 }
 
-.linkedin {
-  width: 20%;
-  height: 20%;
-  margin: auto;
-  padding: 1em;
+.img__picture {
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
 }
 
-.linkedin-link {
+.img__block {
+  display: flex;
+  padding: 3em;
+}
+
+.img__description {
   display: flex;
   flex-direction: column;
-  text-decoration: none;
-  color: #cecbc5;
-  margin: auto;
+  justify-content: space-around;
+}
+.social-icons {
+  padding: 3em;
+}
+
+.social-icons__item {
+  margin: 2em;
   padding: 1em;
-  border-radius: 20px;
-  transition-duration: 150ms;
 }
 
-.linkedin-logo {
-  max-width: 200px;
-  height: auto;
-  margin: auto;
-}
-
-.linkedin-link:hover {
-  border: 3px solid #0477b7;
-}
-
-.linkedin-text {
-  font-size: 1.5em;
-  font-weight: bolder;
-  text-shadow: 2px 0 0 black;
-  margin-bottom: 1em;
+.social-icons__item:hover {
+  border: 1px solid #cecbc5;
+  border-radius: 50%;
 }
 
 /* Responsive */
@@ -125,14 +116,6 @@
     font-size: 1.7em;
   }
 
-  .linkedin {
-    width: auto;
-  }
-
-  .linkedin-text {
-    margin: 0.2em;
-  }
-
   .introduction {
     font-size: 1.3em;
   }
@@ -140,5 +123,18 @@
   .introduction-card {
     width: 90%;
     margin: auto;
+  }
+
+  .img__picture {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 2em;
+    border-radius: 50%;
+  }
+
+  .img__block {
+    flex-direction: column;
+    padding: 0;
   }
 } ;

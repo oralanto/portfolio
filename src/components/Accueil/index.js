@@ -1,10 +1,10 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
 import TypingTextAnimation from "react-typing-text-animation";
+import { SocialIcon } from "react-social-icons";
 
-import linkedin from "../../img/linkedin.svg";
 import "react-typing-text-animation/dist/index.css";
 import "./style.css";
+import profil from "../../img/profil.jpeg";
 
 const Accueil = () => {
   return (
@@ -15,29 +15,29 @@ const Accueil = () => {
           <TypingTextAnimation text="Développeur web" />
         </h1>
       </div>
-      <div className="introduction-card">
-        <p className="introduction">Bonjour et bienvenue sur mon portfolio.</p>{" "}
-        <p className="introduction">
-          Vous trouverez ici ma présentation, mes compétences ainsi que mes
-          projets.
-        </p>{" "}
-        <p className="introduction">Bonne visite !</p>{" "}
+      <div className="img__block">
+        <img src={profil} alt="Osée Ralantoarison" className="img__picture" />
+        <div className="img__description">
+          <p className="introduction">
+            Développeur web Javascript, passionné par les "nouvelles
+            technologies".
+          </p>{" "}
+          <p className="introduction">
+            En quête d'expériences afin de devenir expert dans le domaine de la
+            programmation.
+          </p>{" "}
+        </div>
       </div>
-      <Button color="inherit">
-        <a
-          className="linkedin-link"
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.linkedin.com/in/os%C3%A9e-ralantoarison-2b2265195/"
-        >
-          <h3 className="linkedin-text">Mon profil Linkedin</h3>
-          <img
-            className="linkedin-logo"
-            src={linkedin}
-            alt="Icon linkedin développeur web"
-          />
-        </a>
-      </Button>
+      <div className="social-icons">
+        <SocialIcon
+          url="https://www.linkedin.com/in/osee-ralantoarison"
+          className="social-icons__item"
+        />
+        <SocialIcon
+          url="https://www.github.com/oralanto"
+          className="social-icons__item"
+        />
+      </div>
     </div>
   );
 };

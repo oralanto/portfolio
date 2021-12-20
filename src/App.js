@@ -31,8 +31,8 @@ function App() {
           />
           <Route exact path="/projets/converter" component={Converter} />
         </Switch>
+        <Route path="/" component={Footer} />
       </Router>
-      <Footer />
     </div>
   );
 }
