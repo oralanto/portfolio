@@ -39,6 +39,10 @@ const Competences = () => {
     >
       <h1 className="Competences__title">Compétences</h1>
       <div className="Competences__block">
+        <p className="Competences__description">
+          Réalisation de site web responsive, applications mobile, base de
+          données et deploiements.
+        </p>
         <h2 className="Competences__subtitle">Langages et Frameworks</h2>
         <div className="Competences__list">
           {languages.map((item) => (

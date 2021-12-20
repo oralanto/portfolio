@@ -6,6 +6,14 @@
   margin: 1em;
 }
 
+.Competences__description {
+  font-size: 2em;
+  padding: 3em;
+  margin: 3em 0;
+  color: #cecbc5;
+  line-height: 1.2em;
+}
+
 .Competences__subtitle {
   font-size: 4em;
 }
@@ -63,6 +71,11 @@
     font-size: 3em;
   }
   .Competences__subtitle {
-    font-size: 1.7em;
+    font-size: 2em;
+    text-decoration: underline;
+  }
+  .Competences__description {
+    font-size: 1.5em;
+    padding: 0;
   }
 }

@@ -31,10 +31,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid #cecbc5;
 }
 
 .Projets__card:hover {
-  border: 1px solid #cecbc5;
+  border: 2px solid #cecbc5;
 }
 
 .Projets__card__img {
@@ -128,6 +129,7 @@
   }
   .Projets__card {
     width: 100%;
+    border: 1px solid #cecbc5;
   }
   .projet-presentation {
     font-size: 1.3em;
