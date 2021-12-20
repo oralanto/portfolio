@@ -30,38 +30,26 @@ const Contact = () => {
             alignContent: "flex-start",
           }}
         >
-          <div
-            style={{
-              borderBottom: "1px solid #cecbc5",
-              margin: "1em",
-              padding: "1em 1em 2.5em",
-            }}
-          >
+          <div className="contact-infos">
+            <RoomIcon style={{ marginRight: "2em" }} />
             <p className="contact-info">
-              <RoomIcon style={{ marginRight: "2em" }} />
               Genève et périphérie / Haute-savoie / remote friendly
             </p>
           </div>
-          <div
-            style={{
-              borderBottom: "1px solid #cecbc5",
-              margin: "1em",
-              padding: "1em 1em 2.5em",
-            }}
-          >
-            <p className="contact-info">
-              <MailIcon style={{ marginRight: "2em" }} />
-              o.ralanto@gmail.com
-            </p>
+          <div className="contact-infos">
+            <MailIcon style={{ marginRight: "2em" }} />
+            <p className="contact-info">o.ralanto@gmail.com</p>
           </div>
           <div
             style={{
               margin: "1em",
               padding: "1em",
+              display: "flex",
+              alignItems: "center",
             }}
           >
+            <LinkedInIcon style={{ marginRight: "2em" }} />
             <p className="contact-info">
-              <LinkedInIcon style={{ marginRight: "2em" }} />
               <a
                 href="https://www.linkedin.com/in/osée-ralantoarison"
                 target="_blank"
