@@ -1,6 +1,32 @@
 import React from "react";
 
 import "./style.css";
+
+const design = [
+  "HTML5/CSS3",
+  "CSS in JS",
+  "SCSS/SASS",
+  "Material UI",
+  "Bootstrap",
+];
+const languages = [
+  "Javascript",
+  "React JS",
+  "React Native",
+  "Redux",
+  "Node",
+  "Express",
+];
+const bdd = ["PostgreSQL", "SQL", "MandoDB"];
+const organisation = [
+  "Scrum/Agile",
+  "Jira",
+  "Slack",
+  "Discord",
+  "Zoom",
+  "Git/Github",
+];
+const deploy = ["AWS", "Netlify", "Heroku"];
 const Competences = () => {
   return (
     <div
@@ -12,24 +38,45 @@ const Competences = () => {
       }}
     >
       <h1 className="Competences__title">Compétences</h1>
-      <div className="Competences__list">
-        <h2 className="Competences__item">HTML5</h2>
-        <h2 className="Competences__item">CSS in JS</h2>
-        <h2 className="Competences__item">SCSS/SASS</h2>
-        <h2 className="Competences__item">Javascript</h2>
-        <h2 className="Competences__item">React</h2>
-        <h2 className="Competences__item">React-native</h2>
-        <h2 className="Competences__item">Redux</h2>
-        <h2 className="Competences__item">Material-ui</h2>
-        <h2 className="Competences__item">Bootstrap</h2>
-        <h2 className="Competences__item">Node</h2>
-        <h2 className="Competences__item">Express</h2>
-        <h2 className="Competences__item">PostgreSQL</h2>
-        <h2 className="Competences__item">Git/Github</h2>
-        <h2 className="Competences__item">Jira</h2>
-        <h2 className="Competences__item">Jest</h2>
-        <h2 className="Competences__item">MangoDB</h2>
-        <h2 className="Competences__item">AWS</h2>
+      <div className="Competences__block">
+        <h2 className="Competences__subtitle">Langages et Frameworks</h2>
+        <div className="Competences__list">
+          {languages.map((item) => (
+            <p className="Competences__item">{item}</p>
+          ))}
+        </div>
+      </div>
+      <div className="Competences__block">
+        <h2 className="Competences__subtitle">Design</h2>
+        <div className="Competences__list">
+          {design.map((item) => (
+            <p className="Competences__item">{item}</p>
+          ))}
+        </div>
+      </div>
+      <div className="Competences__block">
+        <h2 className="Competences__subtitle">Base de données</h2>
+        <div className="Competences__list">
+          {bdd.map((item) => (
+            <p className="Competences__item">{item}</p>
+          ))}
+        </div>
+      </div>
+      <div className="Competences__block">
+        <h2 className="Competences__subtitle">Organisation de travail</h2>
+        <div className="Competences__list">
+          {organisation.map((item) => (
+            <p className="Competences__item">{item}</p>
+          ))}
+        </div>
+      </div>
+      <div className="Competences__block">
+        <h2 className="Competences__subtitle">Déploiements</h2>
+        <div className="Competences__list">
+          {deploy.map((item) => (
+            <p className="Competences__item">{item}</p>
+          ))}
+        </div>
       </div>
     </div>
   );
