@@ -18,6 +18,7 @@ import Chatroom from "../../img/Chatroom-spe-react.png";
 import Weather from "../../img/WeatherApp.png";
 import github from "../../img/github.png";
 import mobilApp from "../../img/mobilApp.png";
+import osr from "../../img/osr.png";
 
 import ViewCompactIcon from "@mui/icons-material/ViewCompact";
 
@@ -40,6 +41,43 @@ const Projets = () => {
     <div className="Projets">
       <h2 className="Projets__title">Projets</h2>
       <div className="Projets__cards">
+        <Card
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
+          className={classes.root + " Projets__card"}
+        >
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image={osr}
+              title="Origine Sounds Records"
+            />
+            <CardContent style={{ color: "#CECBC5" }} variant="h6">
+              <Typography gutterBottom variant="h5" component="h2">
+                Origine Sounds Records
+              </Typography>
+              <Typography variant="h6" component="p">
+                Site vitrine pour le studio d'enregistrements "Origine Sounds
+                Records"
+              </Typography>
+              <Typography variant="h6" component="p">
+                React, css
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              <ViewCompactIcon style={{ color: "white", margin: "1rem" }} />
+              <a
+                className="Projets__card__link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://originesoundsrecord.herokuapp.com/"
+              >
+                Lien du projet
+              </a>
+            </Button>
+          </CardActions>
+        </Card>
         <Card
           style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
           className={classes.root + " Projets__card"}
