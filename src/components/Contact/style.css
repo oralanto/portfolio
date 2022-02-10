@@ -37,6 +37,42 @@
   mix-blend-mode: difference;
   margin-top: 3em;
 }
+.contact__containerForm {
+  height: 70vh;
+  width: 90%;
+  margin: 3em auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__containerForm__form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact__containerForm__form__input,
+.contact__containerForm__form__textarea,
+.contact__containerForm__form__button {
+  border: 1px black solid;
+  border-bottom: none;
+  background-color: #cecbc5;
+  min-height: 1rem;
+  padding: 1em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.contact__containerForm__form__textarea {
+  min-height: 20em;
+}
+
+.contact__containerForm__form__input:hover,
+.contact__containerForm__form__textarea:hover,
+.contact__containerForm__form__button:hover {
+  background-color: rgb(245, 240, 232);
+}
 
 @media (max-width: 900px) {
   .contact-title {
@@ -50,5 +86,8 @@
   }
   .contact-card {
     width: 90%;
+  }
+  .contact__containerForm__form {
+    width: 100%;
   }
 }

@@ -12,19 +12,19 @@ const Accueil = () => {
       <div className="infos">
         <h2 className="name">Osée Ralantoarison</h2>
         <h1 className="title-job">
-          <TypingTextAnimation text="Développeur web" />
+          <TypingTextAnimation text="Développeur web Javascript" />
         </h1>
       </div>
       <div className="img__block">
         <img src={profil} alt="Osée Ralantoarison" className="img__picture" />
         <div className="img__description">
           <p className="introduction">
-            Développeur web Javascript, passionné par les "nouvelles
-            technologies".
+            Bienvenu sur mon portfolio, je suis développeur web, réalisateur de
+            site web, vitrine ou portfolio.
           </p>{" "}
           <p className="introduction">
-            En quête d'expériences afin de devenir expert dans le domaine de la
-            programmation.
+            Vous avez besoin d'être visible sur Internet ? Alors vous êtes au
+            bon endroit !
           </p>{" "}
         </div>
       </div>

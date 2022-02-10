@@ -9,7 +9,7 @@ const Footer = () => {
           color: "#cecbc5",
         }}
       >
-        © 2021 Osée Ralantoarison
+        © 2022 Osée Ralantoarison
       </p>
     </div>
   );

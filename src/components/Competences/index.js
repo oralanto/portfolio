@@ -1,33 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import "./style.css";
+import skills from "../../Data/Skills";
 
-const design = [
-  "HTML5/CSS3",
-  "CSS in JS",
-  "SCSS/SASS",
-  "Material UI",
-  "Bootstrap",
-];
-const languages = [
-  "Javascript",
-  "React JS",
-  "React Native",
-  "Redux",
-  "Node",
-  "Express",
-];
-const bdd = ["PostgreSQL", "SQL", "MandoDB"];
-const organisation = [
-  "Scrum/Agile",
-  "Jira",
-  "Slack",
-  "Discord",
-  "Zoom",
-  "Git/Github",
-];
-const deploy = ["AWS", "Netlify", "Heroku"];
 const Competences = () => {
+  const [dataSkills, setDataSkills] = useState();
+
+  useEffect(() => {
+    setDataSkills(skills);
+  }, []);
+
+  console.log(dataSkills);
   return (
     <div
       style={{
@@ -41,45 +24,75 @@ const Competences = () => {
       <div className="Competences__block">
         <p className="Competences__description">
           Réalisation de site web responsive, applications mobile, base de
-          données et deploiements.
+          données et déploiements.
         </p>
         <h2 className="Competences__subtitle">Langages et Frameworks</h2>
         <div className="Competences__list">
-          {languages.map((item) => (
-            <p className="Competences__item">{item}</p>
-          ))}
+          {dataSkills ? (
+            dataSkills.languages.map((item, index) => (
+              <p className="Competences__item" key={index}>
+                {item}
+              </p>
+            ))
+          ) : (
+            <p>Loading</p>
+          )}
         </div>
       </div>
       <div className="Competences__block">
         <h2 className="Competences__subtitle">Design</h2>
         <div className="Competences__list">
-          {design.map((item) => (
-            <p className="Competences__item">{item}</p>
-          ))}
+          {dataSkills ? (
+            dataSkills.design.map((item, index) => (
+              <p className="Competences__item" key={index}>
+                {item}
+              </p>
+            ))
+          ) : (
+            <p>Loading</p>
+          )}
         </div>
       </div>
       <div className="Competences__block">
         <h2 className="Competences__subtitle">Base de données</h2>
         <div className="Competences__list">
-          {bdd.map((item) => (
-            <p className="Competences__item">{item}</p>
-          ))}
+          {dataSkills ? (
+            dataSkills.bdd.map((item, index) => (
+              <p className="Competences__item" key={index}>
+                {item}
+              </p>
+            ))
+          ) : (
+            <p>Loading</p>
+          )}
         </div>
       </div>
       <div className="Competences__block">
         <h2 className="Competences__subtitle">Organisation de travail</h2>
         <div className="Competences__list">
-          {organisation.map((item) => (
-            <p className="Competences__item">{item}</p>
-          ))}
+          {dataSkills ? (
+            dataSkills.organisation.map((item, index) => (
+              <p className="Competences__item" key={index}>
+                {item}
+              </p>
+            ))
+          ) : (
+            <p>Loading</p>
+          )}
         </div>
       </div>
       <div className="Competences__block">
         <h2 className="Competences__subtitle">Déploiements</h2>
         <div className="Competences__list">
-          {deploy.map((item) => (
-            <p className="Competences__item">{item}</p>
-          ))}
+          {dataSkills ? (
+            dataSkills.deploy.map((item, index) => (
+              <p className="Competences__item" key={index}>
+                {item}
+              </p>
+            ))
+          ) : (
+            <p>Loading</p>
+          )}
         </div>
       </div>
     </div>

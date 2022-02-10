@@ -67,8 +67,8 @@ const Converter = () => {
   const filteredCurrencies = getCurrencies();
   return (
     <div className="app-converter">
-      <h1 className="Title">Convertisseur de devise</h1>
-      <div className="presentation">
+      <h1 className="Title">Convertisseur</h1>
+      <div className="projet-presentation">
         Les taux de conversion ne sont pas les taux réel du jour
       </div>
       <div className="converter">

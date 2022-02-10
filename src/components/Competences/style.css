@@ -3,7 +3,7 @@
   font-size: 6em;
   font-weight: bolder;
   letter-spacing: 0.5rem;
-  margin: 1em;
+  margin: 1em auto 0;
 }
 
 .Competences__description {
@@ -16,6 +16,7 @@
 
 .Competences__subtitle {
   font-size: 4em;
+  text-decoration: underline;
 }
 
 .Competences__block {
