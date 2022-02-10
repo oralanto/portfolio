@@ -1,5 +1,7 @@
-app-converter {
+.app-converter {
   min-height: 100vh;
+  width: 100%;
+  margin: auto;
 }
 
 .Title {
@@ -8,6 +10,7 @@ app-converter {
   font-weight: bolder;
   letter-spacing: 0.5rem;
   margin: 1em;
+  color: #cecbc5;
 }
 
 .converter {
@@ -15,5 +18,12 @@ app-converter {
   margin: 2rem auto;
   max-width: 300px;
   height: 100%;
-  border: 3px solid #3C1361;
+  border: 3px solid #3c1361;
+}
+
+@media (max-width: 900px) {
+  .Title {
+    font-size: 2.5em;
+    color: #cecbc5;
+  }
 }
