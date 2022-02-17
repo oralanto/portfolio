@@ -4,7 +4,7 @@
 
 ***
 
-### Les technos, framework, librairies utilisées sont
+### Les technos, frameworks, librairies utilisées sont
 
 - React 17+
 - CSS, CSS in JS
@@ -14,4 +14,4 @@
 - React-social-icons
 - React-typing-text-animation
 
-#### Le site est hebergée sur Netlify
+#### Le site est hebergé sur Netlify
