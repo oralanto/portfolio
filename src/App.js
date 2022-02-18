@@ -10,6 +10,7 @@ import Projets from "./components/Projets";
 import Contact from "./components/Contact";
 import CulturaBaguete from "./components/Projets/CulturaBaguete";
 import Converter from "./components/Projets/Convertisseur";
+import PageNotFound from "./components/PageNotFound";
 
 import "./App.css";
 
@@ -30,6 +31,7 @@ function App() {
             component={CulturaBaguete}
           />
           <Route exact path="/projets/converter" component={Converter} />
+          <Route component={PageNotFound} />
         </Switch>
         <Route path="/" component={Footer} />
       </Router>
